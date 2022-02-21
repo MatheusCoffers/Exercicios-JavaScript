@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios JavaScript</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body >
+    <header>
+        <div class="titulo_header">
+            <h1>Exercícios práticos com JavaScript</h1>
+        </div>
+        <div class="texto_header">
+            <p>Aqui estão alguns exercícios criados com HTML, CSS<br>e JavaScript, Feitos por mim...</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="cards">
+            <div class="card" onclick="card1();res()" >
+                <img src="assets/images/img_01.png" alt="site01">
+                <div>
+                    <h1>
+                        Dia e Noite
+                    </h1>
+                </div>
+            </div>
+            <div class="card" onclick="card2();res()">
+                <img src="assets/images/img_02.png" alt="site02">
+                <div>
+                    <h1>
+                        Verificador de idade
+                    </h1>
+                </div>
+            </div>
+            <div class="card" onclick="card3();res()">
+                <img src="assets/images/img_03.png" alt="site03">
+                <div>
+                    <h1>
+                        Vamos contar
+                    </h1>
+                </div>
+            </div>
+            <div class="card" onclick="card4();res()">
+                <img src="assets/images/img_04.png" alt="site04">
+                <div>
+                    <h1>
+                        Tabuada
+                    </h1>
+                </div>
+            </div>
+            <div class="card" onclick="card5();res()">
+                <img src="assets/images/img_05.png" alt="site05">
+                <div>
+                    <h1>
+                        Verificação de Números
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div id="res">
+            <div class="article">
+                <img src="assets/images/img_01.png" alt="" id="img_res">
+                
+                <div class="res_article">
+                    <p id="txt_res">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    </p>
+                    <div class="buttons">
+                        <a href="#" class="button_res" id="link_res" target="_blank">Visitar Site</a>
+                        <a href="#" class="button_res" onclick="sair()">Sair</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/matheus-coffers-02b9771b3/" id="linkedin" target="_blank">Linkedin: Matheus Coffers</a>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
