@@ -13,3 +13,4 @@ Esse é um miniportifólio feito para mostrar exercícios básicos em JavaScript
 nesse projeto apliquei fundamentos sobre lógica de programação em JavaScript e os apliquei em uma aplicação real  de um miniportifólio
 
 ### considerações finais:
+acesse o projeto: https://matheuscoffers.github.io/Exercicios-JavaScript/
