@@ -1,0 +1,197 @@
+:root{
+    font-size: 10px;
+    font-family: 'Segoe UI';
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+
+body{
+    background-color: #9721F3;
+    z-index: -1;
+}
+
+/*Estilização do header*/
+.titulo_header, .texto_header{
+    text-align: center;
+}
+
+.titulo_header{
+    margin-top: 50px;
+    font-size: clamp(2rem,2vw,4rem);
+
+}
+
+.texto_header{
+    margin-top: 30px;
+    font-size: clamp(2rem,2vw,4rem);
+    margin-bottom: 40px;
+}
+
+/*estilização da div dos cards*/
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*estilização de cada card*/
+.card{
+    width: 350px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
+    border-radius: 15px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card div{
+    margin-top: -4px;
+    height: 80px;
+    background-color: #57138C;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+}
+
+.card div > h1{
+    padding-top: 15px;
+    font-size: 2.5rem;
+}
+
+/*estilização da div res*/
+
+#res{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.726);
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    display: none;
+}
+
+#res>div.article{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
+    width: 70%;
+    background-color: #57138C;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 6vh auto;
+    border-radius: 20px;
+}
+
+#res img {
+    height: clamp(40rem,37vw,70rem);
+    width: clamp(40rem,40vw,70rem);
+    border-radius: 20px 0 0 20px;
+}
+
+.res_article{
+    margin: 30px auto;
+    width: 24vw;
+}
+
+.res_article p{
+    font-size: 2rem;
+    text-align: end;
+}
+
+.buttons{
+    margin-top: 50px;
+    text-align: end;
+}
+
+.button_res{
+    color: white;
+    border: none;
+    background-color: #2f0b4b;
+    font-size: 1.5vw;
+    text-decoration: none;
+    line-height: 0;
+    padding: 10px 30px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.button_res:hover{
+    background-color: white;
+    color: #2f0b4b;
+    font-weight: bold;
+}
+
+
+
+
+@media(max-width: 1045px){
+    #res>div.article{
+        width: 400px;
+    }
+
+    #res img{
+        border-radius: 20px 20px 0 0;
+        height: 300px;
+        width: 400px;
+    }
+
+    .res_article{
+        width: 350px;
+    }
+
+    .res_article p{
+        font-size: 1.5rem;
+        text-align: start;
+    }
+
+    .button_res{
+        font-size: 2rem;
+    }
+}
+
+.nav_button{
+    display: flex;
+    position: fixed;
+    width: 96%;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-top: 200px;
+}
+
+.nav_button div{
+    background-color: #57138C;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.nav_button p{
+    line-height: 80px;
+    text-align: center;
+    font-size: 7rem;
+    cursor: pointer;
+}
+
+/*estilização do footer*/
+footer{
+    display: flex;
+    width: 100%;
+}
+
+#linkedin{
+    margin: 50px auto;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 70px;
+}
+

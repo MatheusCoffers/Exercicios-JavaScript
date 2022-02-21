@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: #DBF227;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: #042940;
+        }
+
+        .first_article{
+            width: 500px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+        .first_article h1{
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .first_article div{
+            padding: 0 50px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .first_article p {
+            font-size: 18px;
+        }
+
+        .first_article input[type="text"]{
+            color: #042940;
+            font-size: 14px;
+            
+        }
+
+        .botao{
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .botao>input{
+            margin: 0 auto;
+            width: 150px;
+            border: none;
+            height: 35px;
+            font-weight: bold;
+            background-color: #DBF227;
+            color: #042940;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 50px;
+        }
+
+        div#res{
+            display: block;
+        }
+
+        div#res p{
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="first_article">
+            <h1>Saiba se você é estrangeiro</h1>
+            <div>
+                <p>digite o país que você está:</p>
+                <input type="text" name="txtPaisAtual" id="txtPaisAtual">
+            </div>
+            <div>
+                <p>digite seu país de origem:</p>
+                <input type="text" name="txtPaisOrigem" id="txtPaisOrigem">
+            </div>
+            <div class="botao">
+                <input type="button" value="consultar" onclick="consulta()">
+            </div>
+            <div id="res"></div>
+        </div>
+    </section>
+
+    <script>
+        function consulta(){
+            let textPaisAtual = document.getElementById("txtPaisAtual")
+            let textPaisOrigem = document.getElementById("txtPaisOrigem")
+            let res = document.querySelector("div#res")
+            let paisAtual = textPaisAtual.value.toUpperCase()
+            let paisOrigem = textPaisOrigem.value.toUpperCase()
+
+            if(paisAtual == paisOrigem){
+                res.innerHTML = `<p>Você não é estrangeiro</p><p>Viva tranquilamente</P>`
+            }else{
+                res.innerHTML = `<p>Você é estrangeiro</p><p>mas não se preocupe</p><p>procure os direitos de estrangeiro do(a) ${paisAtual}`
+            }
+            
+        }
+    </script>
+</body>
+</html>
