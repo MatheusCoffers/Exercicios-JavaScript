@@ -40,7 +40,7 @@ function res() {
   
     imgRes.src = `assets/images/img_0${selectOption}.png`
     divRes.style.display = "inline"
-    linkRes.href = `exercicios/exercicio_${selectOption}`
+    linkRes.href = `exercicios/exercicio_${selectOption}/index.html`
     txtRes.innerHTML = `<p>${txtImg[selectOption-1]}</p>`
 
 }
